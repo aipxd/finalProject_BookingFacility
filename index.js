@@ -15,7 +15,7 @@ app.get("/", (_req, res) => {
 app.use("/api/bookings", bookingRoutes);
 
 const startServer = async () => {
-    connectDB();
+    await connectDB();
     
     app.listen(PORT, () => {
         console.log(`Server jalan di http://localhost:${PORT}`);
