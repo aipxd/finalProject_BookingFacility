@@ -27,7 +27,7 @@ export const getBookings = async (req, res) => {
     };
 };
 
-// READE ONE
+// READ ONE
 export const getBookingById = async (req, res) => {
     try {
         const booking = await Booking.findById(req.params.id);
